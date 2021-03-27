@@ -43,6 +43,11 @@ class Car
     {
         return $this->wheels;
     }
+    
+    public function setWheels(int $wheels): int
+    {
+        $this->wheels = $wheels
+    }
 
     public function getCurrentSpeed(): int
     {
@@ -53,19 +58,39 @@ class Car
     {
         return $this->color;
     }
+    
+    public function setColor(string $color): string
+    {
+        $this->color = $color
+    }
 
     public function getNbSeats(): int
     {
         return $this->nbSeats;
+    }
+    
+    public function setNbSeats(int $nbSeats): int
+    {
+        $this->nbSeats = $nbSeats
     }
 
     public function getEnergy(): string
     {
         return $this->energy;
     }
+    
+    public function setEnergy(string $energy): string
+    {
+        $this->energy = $energy
+    }
 
     public function getEnergyLevel(): int
     {
         return $this->energyLevel;
+    }
+    
+    public function setEnergyLevel(int $energyLevel): int
+    {
+        $this->energyLevel = $energyLevel
     }
 }
